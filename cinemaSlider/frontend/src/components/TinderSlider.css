@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
+
+body {
+  background: linear-gradient(to right, #6d2280, #074c2b);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.tinder-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: 450px;
+  height: 700px;
+  margin: 0 auto;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 20px;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+}
+
+.card.swipe-left {
+  transform: translateX(-100vw) rotate(-30deg);
+}
+
+.card.swipe-right {
+  transform: translateX(100vw) rotate(30deg);
+}
+
+.card-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.card-actions .liked {
+  color: green;
+}
+
+.card-actions .disliked {
+  color: red;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  position: relative;
+  z-index: 1;
+}
+
+.card-body h3::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  filter: blur(5px);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.card-body p {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  padding: 5px;
+}
+
+.card-body p::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  filter: blur(5px);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding: 10px 0;
+  z-index: 1;
+  position: relative;
+}
+
+.left-button, .right-button {
+  margin: 0 10px;
+}
+
+button {
+  cursor: default;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.left-button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #6d2280;
+  color: white;
+  border-radius: 20px;
+  width: 70px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.right-button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #1b7148;
+  color: white;
+  border-radius: 20px;
+  width: 70px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(1.1);
+  z-index: -1;
+}
+
+.no-cards {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.show-liked-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.show-liked-button .heart {
+  font-size: 50px;
+  color: white;
+}
+
+.show-liked-button .counter {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.liked-movies {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background: rgba(232, 239, 236, 0.8);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 80%;
+  overflow-y: auto;
+  width: 350px;
+
+}
+
+.liked-movies h2 {
+  margin-bottom: 10px;
+}
+.movie-info {
+    display:flex;
+}
+
+.liked-movies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.liked-movies li {
+  display: flex;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.liked-movie-image {
+  width: auto;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.liked-movie-details {
+  flex-grow: 1;
+}
+
+.liked-movie-details h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.liked-movie-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.empty-button {
+  width: 60px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.empty-button:hover {
+  background-color: #e0e0e0;
+}
+
+.view-movie-button {
+  background-color: #1b7148;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.view-movie-button:hover {
+  background-color: #145a3f;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
