@@ -255,7 +255,7 @@ button:hover {
   justify-content: space-between;
 }
 
-.empty-button {
+.genre-button {
   width: 60px;
   height: 20px;
   border-radius: 30px;
@@ -264,8 +264,24 @@ button:hover {
   cursor: pointer;
 }
 
-.empty-button:hover {
+.genre-button:hover {
   background-color: #e0e0e0;
+}
+
+.genre-mode-button {
+  position: fixed;
+  top: 20px;
+  padding: 10px;
+  background-color: #1b7148;
+  color: white;
+  border-radius: 20px;
+  width: 120px;
+  border: none;
+}
+
+.genre-mode-button.menu
+{
+   position: relative;
 }
 
 .view-movie-button {
@@ -294,3 +310,31 @@ button:hover {
 .overlay.active {
   display: block;
 }
+
+
+h2 {
+  position: relative;
+  z-index: 1;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  filter: blur(5px);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.genre-buttons, .genre-selection{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
