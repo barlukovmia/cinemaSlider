@@ -8,7 +8,7 @@ const TinderSlider = () => {
     { id: 2, name: 'ЗАТЕРЯННЫЕ', genre: 'триллер', image: './images/maxresdefault.jpg', imageBack: './images/zateran.jpg', description: 'Столичные карьеристы попадают в зловещий городок, из которого невозможно уехать. Триллер с Никитой Кологривым.' },
     { id: 3, name: 'ФИНИСТ ПЕРВЫЙ БОГАТЫРЬ', genre:'семейный', link:'https://start.ru/watch/finist-pervyy-bogatyr', image: './images/102f51b4-bb62-4ec9-9587-d811623f6801.jpg', imageBack: './images/finistpervyjbogatyr_1t.jpg', description: 'Сказочный блокбастер о первом богатыре Белогорья. Финист отправляется к таинственным восточным берегам' },
     { id: 4, name: 'МАМЕ СНОВА 17', genre: 'комедия', link:'https://start.ru/watch/mame-snova-17', image: './images/p1192x597.webp', imageBack: './images/mamesnova.jpg', description: 'В школьную директрису вселяется безбашенная девица из 2000-х. Светлана Ходченкова в ироничной комедии о девушке-подростке, застрявшей в теле чопорной директрисы школы' },
-    { id: 5, name: 'БЕЗ ГРАНИЦ', genre: 'комедия', link:'https://start.ru/watch/bez-granic', image: './images/maxresdefault (1).jpg', imageBack: './images/8081972-4943118.jpg', description: 'События картины начинаются в московском аэропорту, откуда главные герои отправляются в захватывающие путешествия к живописным горным долинам Армении, утопающим в зелени улочкам Тбилиси и праздничным огням новогодней Москвы' },
+    { id: 5, name: 'БЕЗ ГРАНИЦ', genre: 'комедия', link:'https://start.ru/watch/bez-granic', image: './images/maxresdefault (1).jpg', imageBack: './images/8081972-4943118.jpg', description: 'Uлавные герои отправляются в путешествия к живописным горным долинам Армении, утопающим в зелени улочкам Тбилиси и праздничным огням новогодней Москвы' },
   ]);
 
   const [genreMode, setGenreMode] = useState(false);
@@ -128,11 +128,10 @@ const TinderSlider = () => {
                           <h3>{movie.name}</h3>
                           <div className="liked-movie-buttons">
                             <button className="genre-button">{movie.genre}</button>
-                            {movie.link && (
-                              <a href={movie.link} target="_blank" rel="noopener noreferrer">
+                            <a href={movie.link} target="_blank" rel="noopener noreferrer">
                                 <button className="view-movie-button">Смотреть</button>
                               </a>
-                            )}
+
                           </div>
                         </div>
                       </div>

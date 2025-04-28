@@ -258,6 +258,7 @@ button:hover {
 .genre-button {
   width: 60px;
   height: 20px;
+  padding: 0px;
   border-radius: 30px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
