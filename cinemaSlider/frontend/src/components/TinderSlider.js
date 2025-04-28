@@ -6,8 +6,8 @@ const TinderSlider = () => {
   const [cards, setCards] = useState([
     { id: 1, name: 'ОДИН ДЕНЬ В СТАМБУЛЕ', link:'https://start.ru/watch/odin-den-v-stambule', imageBack:'./images/cacd7e6a-6a44-4b5b-8562-abf0fad3beda.jpg', image:'./images/c9175ac3-7a67-4e0f-ba12-a71aff495032.jpg', year: '2024', country: 'Россия', rating: '6.8', description: 'Новая комедия, новые герои, старый добрый «Квартет И». Виды на Босфор, откровенные разговоры и фирменный юмор' },
     { id: 2, name: 'ЗАТЕРЯННЫЕ', image: './images/maxresdefault.jpg', imageBack: './images/zateran.jpg', description: 'Столичные карьеристы попадают в зловещий городок, из которого невозможно уехать. Триллер с Никитой Кологривым.' },
-    { id: 3, name: 'Богатыри', image: './images/102f51b4-bb62-4ec9-9587-d811623f6801.jpg', imageBack: './images/finistpervyjbogatyr_1t.jpg', description: 'Сказочный блокбастер о первом богатыре Белогорья. Финист отправляется к таинственным восточным берегам ' },
-    { id: 4, name: 'Маме снова 17', image: './images/p1192x597.webp' },
+    { id: 3, name: 'ФИНИСТ ПЕРВЫЙ БОГАТЫРЬ', image: './images/102f51b4-bb62-4ec9-9587-d811623f6801.jpg', imageBack: './images/finistpervyjbogatyr_1t.jpg', description: 'Сказочный блокбастер о первом богатыре Белогорья. Финист отправляется к таинственным восточным берегам ' },
+    { id: 4, name: 'МАМЕ СНОВА 17', image: './images/p1192x597.webp', imageBack: '.images/Маме_снова_17.jpg'},
     { id: 5, name: 'Card 5' },
   ]);
 
