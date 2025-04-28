@@ -5,13 +5,20 @@ import './TinderSlider.css';
 const TinderSlider = () => {
   const [cards, setCards] = useState([
     { id: 1, name: 'ОДИН ДЕНЬ В СТАМБУЛЕ', genre: 'комедия', link:'https://start.ru/watch/odin-den-v-stambule', imageBack:'./images/cacd7e6a-6a44-4b5b-8562-abf0fad3beda.jpg', image:'./images/c9175ac3-7a67-4e0f-ba12-a71aff495032.jpg', year: '2024', country: 'Россия', rating: '6.8', description: 'Новая комедия, новые герои, старый добрый «Квартет И». Виды на Босфор, откровенные разговоры и фирменный юмор' },
-    { id: 2, name: 'ЗАТЕРЯННЫЕ', genre: 'триллер', image: './images/maxresdefault.jpg', imageBack: './images/zateran.jpg', description: 'Столичные карьеристы попадают в зловещий городок, из которого невозможно уехать. Триллер с Никитой Кологривым.' },
+    { id: 2, name: 'ЗАТЕРЯННЫЕ', genre: 'триллер', image: './images/maxresdefault.jpg', imageBack: './images/zateran.jpg', description: 'Столичные карьеристы попадают в зловещий городок, из которого невозможно уехать. Триллер с Никитой Кологривым.', link:'https://start.ru/watch/zateryannye' },
     { id: 3, name: 'ФИНИСТ ПЕРВЫЙ БОГАТЫРЬ', link:'https://start.ru/watch/finist-pervyy-bogatyr', genre:'фэнтези', link:'https://start.ru/watch/finist-pervyy-bogatyr', image: './images/102f51b4-bb62-4ec9-9587-d811623f6801.jpg', imageBack: './images/finistpervyjbogatyr_1t.jpg', description: 'Сказочный блокбастер о первом богатыре Белогорья. Финист отправляется к таинственным восточным берегам' },
     { id: 4, name: 'МАМЕ СНОВА 17', genre: 'комедия', link:'https://start.ru/watch/mame-snova-17', image: './images/p1192x597.webp', imageBack: './images/mamesnova.jpg', description: 'В школьную директрису вселяется безбашенная девица из 2000-х. Светлана Ходченкова в ироничной комедии о девушке-подростке, застрявшей в теле чопорной директрисы школы' },
     { id: 5, name: 'БЕЗ ГРАНИЦ', genre: 'комедия', link:'https://start.ru/watch/bez-granic', image: './images/maxresdefault (1).jpg', imageBack: './images/8081972-4943118.jpg', description: 'Главные герои отправляются в путешествия к живописным горным долинам Армении, утопающим в зелени улочкам Тбилиси и праздничным огням новогодней Москвы' },
     { id: 6, name: 'КОНЕЦ СЛАВЫ', genre: 'комедия', link: 'https://start.ru/watch/konec-slavy', image: './images/startv.jpg', imageBack:'./images/Конец_славы.jpg', description: 'Артист инсценирует свою смерть, чтобы вернуть расположение коллег и любовь зрителей'},
     { id: 7, name: 'НЕПРИЛИЧНЫЕ ГОСТИ', genre: 'комедия', link:'https://start.ru/watch/neprilichnye-gosti', image: './images/Без названия.jpg', imageBack: './images/d34a4c09-cbda-488a-9fc6-f3595e567d0e.jpg', description: 'Чувственные соседи предлагают супругам-снобам раскрепоститься. Пикантная камерная комедия'},
-    { id: 8, name: 'МНОГОЭТАЖКА', genre:'триллер', image: './images/Без названия (1).jpg', description:'После исчезновения дочери в подъезде собственного дома герой начинает свое расследование', imageBack:'./images/JKxT-ot9mO1LvjM_8.webp' }
+    { id: 8, name: 'МНОГОЭТАЖКА', genre:'триллер', image: './images/Без названия (1).jpg', description:'После исчезновения дочери в подъезде собственного дома герой начинает свое расследование', imageBack:'./images/Многоэтажка.jpg', link:'https://start.ru/watch/mnogoetazhka' },
+    { id: 9, name: 'ВОРОВКА', genre:'триллер', link: 'https://premier.one/show/vorovka', image:'./images/hq720.jpg', imageBack:'./images/влпрыл.webp',description:'Тяжелая судьба сделала из девушки умелую воровку, которая работает в паре с таинственным хакером. Уже много лет она пытается разыскать своего отца и во время очередного ограбления наконец выходит на его след.'},
+    { id: 10, name: 'КЛАУСТРАФОБЫ: ИНСОМНИЯ', genre:'триллер', image: './images/ee6934c3-f45f-4ed2-8b52-4a52e731047f.jpg', imageBack:'./images/5a264e20942cd606f4c0ae5394adb6.jpg', genre:'триллер', link:'https://premier.one/show/klaustrofoby-insomniya', description: 'Клэр вызвалась добровольцем для участия в исследовании лекарства загадочной фармацевтической компании. После нескольких приемов у всех добровольцев проявляются побочные действия. Теперь им нельзя спать, иначе они умрут. ' },
+    { id: 11},
+    { id: 12},
+    { id: 13},
+    { id: 14},
+    { id: 15},
   ]);
 
   const [genreMode, setGenreMode] = useState(false);
