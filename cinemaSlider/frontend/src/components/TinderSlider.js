@@ -12,9 +12,9 @@ const TinderSlider = () => {
     { id: 6, name: 'КОНЕЦ СЛАВЫ', genre: 'комедия', link: 'https://start.ru/watch/konec-slavy', image: './images/startv.jpg', imageBack:'./images/Конец_славы.jpg', description: 'Артист инсценирует свою смерть, чтобы вернуть расположение коллег и любовь зрителей'},
     { id: 7, name: 'НЕПРИЛИЧНЫЕ ГОСТИ', genre: 'комедия', link:'https://start.ru/watch/neprilichnye-gosti', image: './images/Без названия.jpg', imageBack: './images/d34a4c09-cbda-488a-9fc6-f3595e567d0e.jpg', description: 'Чувственные соседи предлагают супругам-снобам раскрепоститься. Пикантная камерная комедия'},
     { id: 8, name: 'МНОГОЭТАЖКА', genre:'триллер', image: './images/Без названия (1).jpg', description:'После исчезновения дочери в подъезде собственного дома герой начинает свое расследование', imageBack:'./images/Многоэтажка.jpg', link:'https://start.ru/watch/mnogoetazhka' },
-    { id: 9, name: 'ВОРОВКА', genre:'триллер', link: 'https://premier.one/show/vorovka', image:'./images/hq720.jpg', imageBack:'./images/влпрыл.webp',description:'Тяжелая судьба сделала из девушки умелую воровку, которая работает в паре с таинственным хакером. Уже много лет она пытается разыскать своего отца и во время очередного ограбления наконец выходит на его след.'},
-    { id: 10, name: 'КЛАУСТРАФОБЫ: ИНСОМНИЯ', genre:'триллер', image: './images/ee6934c3-f45f-4ed2-8b52-4a52e731047f.jpg', imageBack:'./images/5a264e20942cd606f4c0ae5394adb6.jpg', genre:'триллер', link:'https://premier.one/show/klaustrofoby-insomniya', description: 'Клэр вызвалась добровольцем для участия в исследовании лекарства загадочной фармацевтической компании. После нескольких приемов у всех добровольцев проявляются побочные действия. Теперь им нельзя спать, иначе они умрут. ' },
-    { id: 11, },
+    { id: 9, name: 'ВОРОВКА', genre:'триллер', link: 'https://premier.one/show/vorovka', image:'./images/hq720.jpg', imageBack:'./images/влпрыл.webp',description:'Умелая воровку, которая работает в паре с таинственным хакером. Уже много лет она пытается разыскать своего отца и во время очередного ограбления наконец выходит на его след.'},
+    { id: 10, name: 'КЛАУСТРАФОБЫ: ИНСОМНИЯ', genre:'триллер', image: './images/ee6934c3-f45f-4ed2-8b52-4a52e731047f.jpg', imageBack:'./images/5a264e20942cd606f4c0ae5394adb6.jpg', genre:'триллер', link:'https://premier.one/show/klaustrofoby-insomniya', description: 'Клэр вызвалась для участия в исследовании лекарства. После нескольких приемов у всех добровольцев проявляются побочные действия. Теперь им нельзя спать, иначе они умрут. ' },
+    { id: 11, name: 'НЕБО', genre:'драма', link:'https://premier.one/show/nebo', imageBack:'./images/Небо_(постер_фильма).jpg', image: './images/816x459.webp', description:' В ноябре 2015 года турецкий истребитель атаковал их самолет. Сошников и Муравьев смогли катапультироваться, но только один из них сумел вернуться домой живым.' },
     { id: 12, },
     { id: 13},
     { id: 14},
@@ -107,7 +107,7 @@ const TinderSlider = () => {
         <div className="genre-selection">
           <h2>Выберите жанр:</h2>
           <div className="genre-buttons">
-            {['комедия', 'триллер', 'семейный'].map((genre, index) => (
+            {['комедия', 'триллер', 'драма'].map((genre, index) => (
               <button key={index} onClick={() => handleSelectGenre(genre)} className="genre-mode-button menu">
                 {genre}
               </button>
