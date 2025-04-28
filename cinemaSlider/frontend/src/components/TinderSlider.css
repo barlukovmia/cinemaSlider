@@ -17,8 +17,8 @@ body {
 
 .card {
   position: relative;
-  width: 450px;
-  height: 700px;
+  width: 320px;
+  height: 500px;
   margin: 0 auto;
   background-size: cover;
   overflow: hidden;
@@ -269,6 +269,7 @@ button:hover {
 }
 
 .genre-mode-button {
+  z-index: 999;
   position: fixed;
   top: 20px;
   padding: 10px;
