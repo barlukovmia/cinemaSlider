@@ -15,7 +15,7 @@ const TinderSlider = () => {
     { id: 9, name: 'ВОРОВКА', genre:'триллер', link: 'https://premier.one/show/vorovka', image:'./images/hq720.jpg', imageBack:'./images/влпрыл.webp',description:'Умелая воровку, которая работает в паре с таинственным хакером. Уже много лет она пытается разыскать своего отца и во время очередного ограбления наконец выходит на его след.'},
     { id: 10, name: 'КЛАУСТРАФОБЫ: ИНСОМНИЯ', genre:'триллер', image: './images/ee6934c3-f45f-4ed2-8b52-4a52e731047f.jpg', imageBack:'./images/5a264e20942cd606f4c0ae5394adb6.jpg', genre:'триллер', link:'https://premier.one/show/klaustrofoby-insomniya', description: 'Клэр вызвалась для участия в исследовании лекарства. После нескольких приемов у всех добровольцев проявляются побочные действия. Теперь им нельзя спать, иначе они умрут. ' },
     { id: 11, name: 'НЕБО', genre:'драма', link:'https://premier.one/show/nebo', imageBack:'./images/Небо_(постер_фильма).jpg', image: './images/816x459.webp', description:' В ноябре 2015 года турецкий истребитель атаковал их самолет. Сошников и Муравьев смогли катапультироваться, но только один из них сумел вернуться домой живым.' },
-    { id: 12, },
+    { id: 12, name: 'ДОКТОР', genre:'драма', image:'./images/oUEJ47EjDYq_OSZxHyMju_PFQz2hKvT3.jpg', imageBack:'./images/Доктор_(фильм,_2023).jpeg',  link:'https://premier.one/show/doktor', description: 'Иван Христофоров работает психиатром в психоневрологическом отделении для подростков. Его пациенты — дети с самыми разными проблемами: от депрессии до гиперопеки.' },
     { id: 13},
     { id: 14},
     { id: 15},
